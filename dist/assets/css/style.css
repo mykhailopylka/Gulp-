@@ -354,7 +354,13 @@ body {
     background-color: #181818;
     font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1.4rem;
-    color: #691d1d;
+    line-height: 1.5;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .page {
@@ -375,10 +381,31 @@ body {
     position: fixed;
     width: 400px;
     height: 100vh;
-    background-color: #ccc;
+    background-color: #202020;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
     top: 0;
     left: 0;
     z-index: 100;
+}
+
+.sidebar__header {
+    max-height: 220px;
+    background-color: #121212;
+}
+
+.sidebar__header img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.sidebar__content {
+    display: block;
+    text-align: center;
+    margin-top: -5rem;
+    padding: 0 2rem;
 }
 
 .main {
@@ -391,4 +418,103 @@ body {
     margin: 0 auto;
     padding: 0 5rem;
     border: 1px solid red;
+}
+
+.profile__avatar {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+
+.profile__name {
+    font-size: 1.8rem;
+}
+
+.profile__description {
+    font-weight: 300;
+    color: #DEDEDE;
+    margin-bottom: 2rem;
+}
+
+.profile__info {
+    font-size: 1.2rem;
+    border-top: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    padding: 3rem 0;
+    margin: 3rem 0;
+}
+
+.social {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.social__item {
+    margin: .75rem;
+}
+
+.social__link img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.sidebar__footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 12rem;
+    height: 4rem;
+    margin: 0 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn--red {
+    background-color: #ED3024;
+    box-shadow: 0 7px 17px -10px rgba(237, 48, 36, 0.2);
+}
+
+.btn--red:hover {
+    background-color: #e51f13;
+}
+
+.btn--blue {
+    background-color: #2A5FE7;
+    box-shadow: 0 7px 17px rgba(42, 95, 231, 0.2);
+    border: none;
+}
+
+.btn--blue:hover {
+    background-color: #1950de;
+}
+
+.btn--blue:active, .btn--blue:focus {
+    outline: none;
 }

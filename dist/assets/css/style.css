@@ -368,18 +368,170 @@ a {
 }
 
 .header {
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
-    height: 30px;
-    width: calc(100% - 400px);
-    background-color: #444;
+    width: calc(100% - 40rem);
+    background-color: #0D0D0D;
     top: 0;
     right: 0;
     z-index: 100;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
+.nav {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header_left {
+    max-width: 60%;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.nav__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:hover .nav__list-link {
+    background-color: #2A5FE7;
+}
+
+.nav__item:hover > .subnav {
+    display: block;
+    background-color: #2A5FE7;
+}
+
+.nav__list li {
+    list-style-type: none;
+}
+
+.nav__list-link {
+    padding: 1.35rem;
+    transition: .2s linear;
+}
+
+.nav__list-link.has-subnav {
+    position: relative;
+    padding-right: 2.5rem;
+}
+
+.nav__list-link.has-subnav::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    top: 50%;
+    right: 2px;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.header__right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2rem;
+    max-width: 40%;
+    width: 100%;
+}
+
+.subnav {
+    position: absolute;
+    display: none;
+    font-size: 1.2rem;
+    width: 17.5rem;
+    top: 150%;
+    left: 0;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subnav li {
+    width: 100%;
+    padding: .8rem;
+    transition: .25s ease-in-out;
+}
+
+.subnav li:hover {
+    background-color: #1950de;
+}
+
+.subnav__link {
+    transition: .25s linear;
+}
+
+.subnav__link:hover {
+    text-shadow: 5px 5px 5px #202020;
+    padding: 1rem 0;
+}
+
+.search {
+    max-width: 30rem;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #202020;
+}
+
+.search__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1.8rem 2rem;
+    border: none;
+    background: transparent;
+}
+
+.search__input:active, .search__input:focus {
+    outline: none;
+    background-color: rgba(42, 95, 231, 0.5);
+    border-radius: 10px;
+    font-size: 1.6rem;
+    padding: 1.6rem 2rem;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.search__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.search__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.search__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.search__input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .sidebar {
     position: fixed;
-    width: 400px;
+    width: 40rem;
     height: 100vh;
     background-color: #202020;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
@@ -408,13 +560,25 @@ a {
     padding: 0 2rem;
 }
 
+.sidebar__footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
 .main {
-    padding-left: 400px;
+    padding-left: 40rem;
     padding-top: 10rem;
 }
 
 .conteiner {
-    max-width: 80rem;
+    max-width: 100rem;
     margin: 0 auto;
     padding: 0 5rem;
     border: 1px solid red;
@@ -467,18 +631,6 @@ a {
 .social__link img {
     width: 3rem;
     height: 3rem;
-}
-
-.sidebar__footer {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 3rem;
-    font-size: 1.2rem;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
 }
 
 .btn {

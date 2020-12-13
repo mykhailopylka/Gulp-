@@ -3,7 +3,7 @@
     height: 150px;
     border: 2px solid $white;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover; // стабілізує фото
     box-shadow: 0 7px 20px rgba(#000, .25);
     margin-bottom: 2rem;
 }
@@ -17,7 +17,6 @@
 }
 .profile__info{
     font-size: 1.2rem;
-
     border-top: 1px solid #1c1c1c;
     border-bottom: 1px solid #1c1c1c;
     padding: 3rem 0;

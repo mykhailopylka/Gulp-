@@ -26,6 +26,11 @@ a{
   color: $white;
   text-decoration: none;
 }
+h3{
+  color: $white;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
 
 // bloks
 @import "blocks/page";
@@ -44,3 +49,5 @@ a{
 @import "blocks/conteiner";
 @import "blocks/stories";
 @import "blocks/add-post";
+@import "blocks/show-post";
+@import "blocks/my-article";

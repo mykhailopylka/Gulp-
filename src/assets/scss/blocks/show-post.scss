@@ -10,12 +10,11 @@
 }
 .show-post__text{
     position: absolute;
-    margin: 2.5rem 0 4.4rem;
+    margin: 2.5rem 0 0;
     line-height: 2.1rem;
 }
 .show-post__time{
     position: absolute;     
     bottom: 2.5rem;
-    // left: 2.78rem;
     color: $gray; 
 }

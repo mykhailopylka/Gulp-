@@ -26,6 +26,15 @@ a{
   color: $white;
   text-decoration: none;
 }
+h1, .head-title{
+  font-size: 1.8rem;
+  color: $white;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 1.6rem;
+  color: $white;  
+}
 h3{
   color: $white;
   font-size: 1.8rem;
@@ -51,5 +60,9 @@ h3{
 @import "blocks/add-post";
 @import "blocks/show-post";
 @import "blocks/my-article";
+@import "blocks/article-wrapper";
+
+@import "blocks/page-article";
+@import "blocks/page-wrapper";
 
 @import "blocks/page-switcher";

@@ -1,22 +1,16 @@
 .my-article{
     display: block;    
     width: 100%;
-    height: 44.6rem;
     box-shadow: 0 4px 4px rgba($black, .25);
     background-color: $primary;
     margin-bottom: 3rem;
     border-radius: 5px;
-}
-.my-article__wrapper{
-    margin: 0 2.5rem 0 2.6rem;
-    margin-bottom: 2.6rem;
 }
 .my-article__img img{
     display: block;
     width: 100%;
     height: 24.5rem;
     object-fit: cover;
-    margin-bottom: 2.5rem;
 }
 .my-article__footer{
     display: flex;
@@ -24,8 +18,13 @@
     margin-top: 2.1rem;
     position: relative;
 }
+.my-article__footer-left{
+    display: flex;
+    justify-content: space-between;
+    width: 22rem;
+}
 .show-article__time{
-    // bottom: 2.5rem;
+    bottom: 2.5rem;
     color: $gray; 
 }
 .article__text{
@@ -35,7 +34,7 @@
     color: $gray;
     &::before{
         content: "";
-        margin-left: -32rem;
+        margin-left: 0rem;
     }
     &::after{
         content: "";
@@ -59,7 +58,6 @@
 // video -----------
 .my-article__video{
     padding-top: 2.5rem;
-    height: 54rem;
 }
 .article-video{
     display: block;
@@ -69,9 +67,6 @@
 }
 
 // Next block
-.my-article__block{
-    height: 48.4rem;    
-}
 .block-img img{
     height: 28.3rem;
 }

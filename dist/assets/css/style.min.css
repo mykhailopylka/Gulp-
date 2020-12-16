@@ -729,12 +729,12 @@ h3 {
 
 .my-article__video {
   padding-top: 2.5rem;
-  height: 42rem; }
+  height: 54rem; }
 
 .article-video {
   display: block;
   width: calc(100% - 5rem);
-  height: 28rem;
+  height: 40rem;
   margin: 0 2.5rem; }
 
 .my-article__block {

@@ -25,6 +25,9 @@
     &::placeholder{
         color: $texts-whight;
     }
+    &:focus{
+        outline-width: 0;
+    }
     padding-top: 1.8rem;
 }
 // Buttons ==========================
